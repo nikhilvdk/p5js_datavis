@@ -19,9 +19,8 @@ function preload() {
 
   function setup(){
   canvas = createCanvas(pagex,pagey); 
-  // background(100); let's uncomment this, we don't need it for now
 
-  // Create a tile map with the options declared
+  // tile map
   myMap = mappa.tileMap(options); 
   myMap.overlay(canvas);
   loadData();
@@ -82,9 +81,7 @@ class Loc{
     }
 
     rollover(px, py) {
-        // var mousepos = myMap.pixelToLatLng(px, py);
-        // console.log(lat);
-        // console.log(lon);
+
         var ptpos = myMap.latLngToPixel(this.lat, this.lon);
 
         var d = dist(ptpos.x, ptpos.y, px, py);
