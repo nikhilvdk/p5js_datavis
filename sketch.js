@@ -13,7 +13,7 @@ const options = {
 }
 
 function preload() {
-    table = loadTable("/data/party_in_nyc.csv", "header");
+    table = loadTable("data/party_in_nyc.csv", "header");
   }
 
 
