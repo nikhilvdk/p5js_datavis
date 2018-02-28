@@ -97,7 +97,6 @@ class Loc{
 
         } else {
           this.over = false;
-          console.log("here")
           text('');
         }
       }
