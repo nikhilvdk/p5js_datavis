@@ -60,22 +60,24 @@ class Loc{
     display(){
         noStroke();
         var ptpos = myMap.latLngToPixel(this.lat, this.lon);
-        ellipse(ptpos.x, ptpos.y, 5, 5);
-        if(this.type=="Residential Building/House"){
+        
+        if(this.type==="Residential Building/House"){
             fill('red');
         }
-        if(this.type=="Store/Commercial"){
+        if(this.type==="Store/Commercial"){
             fill('blue');
         }
-        if(this.type=="Street/Sidewalk"){
+        if(this.type==="Street/Sidewalk"){
             fill('orange');
         }
-        if(this.type=="House of Worship"){
+        if(this.type==="House of Worship"){
             fill('green');
         }
-        if(this.type=="Club/Bar/Restaurant"){
+        if(this.type==="Club/Bar/Restaurant"){
             fill('black');
         }
+
+        ellipse(ptpos.x, ptpos.y, 5, 5);
         
     }
 
