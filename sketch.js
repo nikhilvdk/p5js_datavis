@@ -3,7 +3,7 @@ var pagey = 660;
 let myMap;
 let canvas;
 var locationpts;
-const mappa = new Mappa('Google','AIzaSyDrayGYspoCUFliVyv8-haJmaV0hxbdxfo');
+const mappa = new Mappa('Google','AIzaSyCo5Rdu_SxgHDVcw5hyZE309EXP_w5Juls');
 
 const options = {
   lat: 40.781581,
